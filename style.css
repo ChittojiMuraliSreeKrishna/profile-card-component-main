@@ -1,0 +1,101 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desaurated-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --fw-normal: 400;
+    --fw-big: 700;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans';
+    background: var(--dark-cyan);
+    font-size: 18px;
+    font-weight: var(--fw-normal);
+}
+.main{
+    height: 100vh;
+    background: url(./images/bg-pattern-top.svg) calc((50vw - 100vh)) -50vh no-repeat,
+    url(./images/bg-pattern-bottom.svg) 50vw 50vh no-repeat var(--dark-cyan);
+    background-size: auto 100vh;
+    display: grid;
+    place-items: center;
+}
+.card{
+    width: 32rem;
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    }
+.card-img{
+    background: url("./images/bg-pattern-card.svg");
+    width: auto;
+    height: 12rem;
+}
+hr{
+    display: block;
+    margin: 0.5rem 0;
+    border: 0;
+    height: 1px;
+    background: #efefef;
+    width: 100%;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.profile-pic{
+    width: 10rem;
+    heigt: 10rem;
+    border-radius: 50%;
+    border: solid 0.5rem #fff;
+    overflow: hidden;
+    margin-top: -6rem;
+    align-self: center;
+}
+
+ul{
+    list-style-type: none;
+    width: 32rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+h3{
+    color: var(--desaurated-blue);
+    font-weight: var(--fw-big);
+    text-align: center;
+}
+h3 span{
+    color: var(--dark-gray);
+    font-weight: var(--fw-normal);
+    margin-left: .5rem;
+}
+p{
+    margin: 1rem 0;
+    font-size: 20px;
+}
+li{
+    font-weight: var(--fw-big);
+    text-align: center;
+    color: var(--desaurated-blue);
+}
+li span{
+    display: block;
+    font-weight: var(--fw-normal);
+    font-size: 15px;
+    color: var(--dark-gray);
+}
